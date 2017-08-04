@@ -47,7 +47,7 @@ public class EventoController {
 	
 
 	@PostMapping("/evento")
-	public String event() {
+	public @ResponseBody String event() {
 		List<Eventos> list = (List<Eventos>) dao.findAll();
 		StringBuilder builder = new StringBuilder();
 		builder.append("Eventos:\n");
