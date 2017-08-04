@@ -1,0 +1,10 @@
+/Users/marcio.shibao/eclipse-workspace/contractMan/src/main/java/br/com/contractMan/controllers/ProductController.java
+/Users/marcio.shibao/eclipse-workspace/contractMan/src/main/java/br/com/contractMan/daos/PaginatorQueryHelper.java
+/Users/marcio.shibao/eclipse-workspace/contractMan/src/main/java/br/com/contractMan/models/Product.java
+/Users/marcio.shibao/eclipse-workspace/contractMan/src/main/java/br/com/contractMan/Boot.java
+/Users/marcio.shibao/eclipse-workspace/contractMan/src/main/java/br/com/contractMan/controllers/CategoryController.java
+/Users/marcio.shibao/eclipse-workspace/contractMan/src/main/java/br/com/contractMan/daos/ProductDao.java
+/Users/marcio.shibao/eclipse-workspace/contractMan/src/main/java/br/com/contractMan/models/Category.java
+/Users/marcio.shibao/eclipse-workspace/contractMan/src/main/java/br/com/contractMan/daos/CategoryDao.java
+/Users/marcio.shibao/eclipse-workspace/contractMan/src/main/java/br/com/contractMan/controllers/HomeController.java
+/Users/marcio.shibao/eclipse-workspace/contractMan/src/main/java/br/com/contractMan/models/PaginatedList.java

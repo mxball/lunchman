@@ -1,0 +1,10 @@
+br/com/contractMan/Boot.class
+br/com/contractMan/controllers/CategoryController.class
+br/com/contractMan/daos/PaginatorQueryHelper.class
+br/com/contractMan/controllers/ProductController.class
+br/com/contractMan/daos/CategoryDao.class
+br/com/contractMan/daos/ProductDao.class
+br/com/contractMan/controllers/HomeController.class
+br/com/contractMan/models/Category.class
+br/com/contractMan/models/Product.class
+br/com/contractMan/models/PaginatedList.class
