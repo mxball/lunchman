@@ -52,7 +52,8 @@ public class Restaurantes {
 	@Override
 	public String toString() {
 		return "Restaurante: " + nome + "\n"
-			  +"Tipo: " + tipo;
+			 + "Descriçao: " + descricao + "\n"
+			 + "Tipo: " + tipo;
 	}
 	
 

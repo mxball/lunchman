@@ -9,5 +9,7 @@ import br.com.contractMan.models.Restaurantes;
 public interface RestauranteDao extends CrudRepository<Restaurantes, Long>{
 
 	List<Restaurantes> findByTipo(String tipo);
+
+	Restaurantes findByNome(String nome);
 	
 }
