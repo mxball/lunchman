@@ -51,6 +51,11 @@ public class Eventos {
 		this.nome = nome;
 	}
 	
-	
+	@Override
+	public String toString() {
+		return "Evento: " + nome + "\n"
+			 + "Data: " + data + "\n"
+			 + "Participantes: " + usuarios;
+	}
 	
 }

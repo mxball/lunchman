@@ -25,13 +25,5 @@ public class HomeController {
 	public String index() {
 		return "home/home";
 	}
-
-	@PostMapping("/evento")
-	public ModelAndView event() {
-		List<Eventos> list = (List<Eventos>) eventoDao.findAll();
-		System.out.println(list.size());
-		return new ModelAndView("evento/lista").addObject("lista", list);
-	}
-
 	
 }
