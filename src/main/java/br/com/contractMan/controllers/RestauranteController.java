@@ -36,19 +36,19 @@ public class RestauranteController {
 		return restaurante.toString(); 
 	}
 	
-	@RequestMapping(value="/lunch", method= RequestMethod.POST)
+	@RequestMapping(value="lunch", method= RequestMethod.POST)
 	public @ResponseBody String choose(String tipo) {
 		List<Restaurantes> list = dao.findByTipo(tipo);
 		return new Gson().toJson(list);
 	}
 	
-	@RequestMapping(value = "/restaurante/delete/{nome}", method = RequestMethod.POST)
+	@RequestMapping(value = "restaurante/delete/{nome}", method = RequestMethod.POST)
 	public void deletar(@PathVariable(value="nome") String nome) {
 		Restaurantes restaurante = dao.findByNome(nome);
 		dao.delete(restaurante);
 	}
 
-	@RequestMapping(value = "/restaurante}", method = RequestMethod.GET)
+	@RequestMapping(value ="restaurante}", method = RequestMethod.GET)
 	public String list() {
 		List<Restaurantes> all = (List<Restaurantes>) dao.findAll();
 		StringBuilder builder = new StringBuilder();
