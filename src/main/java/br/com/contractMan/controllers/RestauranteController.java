@@ -48,7 +48,7 @@ public class RestauranteController {
 		dao.delete(restaurante);
 	}
 
-	@RequestMapping(value = "/restaurante}", method = RequestMethod.POST)
+	@RequestMapping(value = "/restaurante}", method = RequestMethod.GET)
 	public String list() {
 		List<Restaurantes> all = (List<Restaurantes>) dao.findAll();
 		StringBuilder builder = new StringBuilder();
