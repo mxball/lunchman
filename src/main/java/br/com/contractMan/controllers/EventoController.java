@@ -60,7 +60,7 @@ public class EventoController {
 	}
 	
 	@GetMapping("/evento/{nome}")
-	public @ResponseBody String eventDetail(@PathParam("nome") String nome) {
+	public @ResponseBody String eventDetail(@PathVariable("nome") String nome) {
 		Eventos evento = dao.findByNome(nome);
 		return evento.toString();
 	}
