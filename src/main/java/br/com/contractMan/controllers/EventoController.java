@@ -3,6 +3,8 @@ package br.com.contractMan.controllers;
 import java.time.LocalDateTime;
 import java.util.List;
 
+import javax.websocket.server.PathParam;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -55,6 +57,12 @@ public class EventoController {
 			builder.append(evento.getNome() + "\n");
 		}
 		return builder.toString();
+	}
+	
+	@GetMapping("/evento/{nome}")
+	public @ResponseBody String eventDetail(@PathParam("nome") String nome) {
+		Eventos evento = dao.findByNome(nome);
+		return evento.toString();
 	}
 
 }

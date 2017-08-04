@@ -6,4 +6,6 @@ import br.com.contractMan.models.Eventos;
 
 public interface EventosDao extends CrudRepository<Eventos, Long>{
 
-	Eventos findById(Long i);}
+	Eventos findById(Long i);
+
+	Eventos findByNome(String nome);}
