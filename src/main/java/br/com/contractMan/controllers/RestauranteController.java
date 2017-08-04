@@ -47,5 +47,16 @@ public class RestauranteController {
 		Restaurantes restaurante = dao.findByNome(nome);
 		dao.delete(restaurante);
 	}
+
+	@RequestMapping(value = "/restaurante}", method = RequestMethod.POST)
+	public String list() {
+		List<Restaurantes> all = (List<Restaurantes>) dao.findAll();
+		StringBuilder builder = new StringBuilder();
+		builder.append("Restaurantes: \n");
+		for (Restaurantes r : all) {
+			builder.append(r.getNome() + "\n");
+		}
+		return builder.toString();
+	}
 	
 }
