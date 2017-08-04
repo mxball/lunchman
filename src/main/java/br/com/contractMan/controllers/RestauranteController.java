@@ -32,8 +32,7 @@ public class RestauranteController {
 		Random rnd = new Random();
 	    int i = rnd.nextInt(lista.size());
 	    Restaurantes restaurante = lista.get(i);
-	    Gson gson = new Gson();
-		return gson.toJson(restaurante); 
+		return restaurante.toString(); 
 	}
 	
 	@RequestMapping(value="/lunch", method= RequestMethod.POST)

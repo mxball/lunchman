@@ -49,5 +49,11 @@ public class Restaurantes {
 		this.descricao = descricao;
 	}
 	
+	@Override
+	public String toString() {
+		return "Restaurante: " + nome + "\n"
+			  +"Tipo: " + tipo;
+	}
+	
 
 }
