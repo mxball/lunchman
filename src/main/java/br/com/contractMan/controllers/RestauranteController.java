@@ -49,7 +49,7 @@ public class RestauranteController {
 	}
 
 	@RequestMapping(value ="restaurante", method = RequestMethod.GET)
-	public String list() {
+	public @ResponseBody String list() {
 		List<Restaurantes> all = (List<Restaurantes>) dao.findAll();
 		StringBuilder builder = new StringBuilder();
 		builder.append("Restaurantes: \n");
